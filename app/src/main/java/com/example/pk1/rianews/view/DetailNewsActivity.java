@@ -141,7 +141,6 @@ public class DetailNewsActivity extends AppCompatActivity implements NavigationV
                     public void onBitmapFailed(Drawable errorDrawable) {
 
                     }
-
                     @Override
                     public void onPrepareLoad(Drawable placeHolderDrawable) {
 
