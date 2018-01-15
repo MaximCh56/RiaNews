@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.pk1.rianews.view.DetailNewsActivity"
+    tools:showIn="@layout/app_bar_detail_news">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageViewNews"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:src="@drawable/gradient"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/textViewNews"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageViewNews" />
+
+
+            <TextView
+                android:id="@+id/textViewSubtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/textViewNews"
+                android:textColor="@android:color/background_light"
+                android:layout_centerHorizontal="true"
+                 />
+
+            <TextView
+                android:id="@+id/textViewTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/textViewSubtitle"
+                android:textColor="@android:color/background_light"
+                android:layout_centerHorizontal="true"
+                />
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
