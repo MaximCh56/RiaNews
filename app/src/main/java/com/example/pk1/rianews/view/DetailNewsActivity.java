@@ -136,7 +136,6 @@ public class DetailNewsActivity extends AppCompatActivity implements NavigationV
                     public void onBitmapLoaded(Bitmap bitmap, Picasso.LoadedFrom from) {
                         imageViewNews.setBackground(new BitmapDrawable(DetailNewsActivity.this.getResources(), bitmap));
                     }
-
                     @Override
                     public void onBitmapFailed(Drawable errorDrawable) {
 
