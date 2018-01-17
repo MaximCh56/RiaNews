@@ -32,7 +32,7 @@ public class NewsPresenterImpl implements NewsPresenter {
 
 
     @Override
-    public void requestJsonNews(final String categoryUrl, final String categoryName) {
+    public void requestNews(final String categoryUrl, final String categoryName) {
         if (isAttached()) {
             try {
                 jsoupClient.getNewsForCategory(categoryUrl,categoryName)
@@ -71,7 +71,7 @@ public class NewsPresenterImpl implements NewsPresenter {
     }
 
     @Override
-    public void requestJsonCategory() {
+    public void requestCategory() {
         if (isAttached()) {
             try {
                 jsoupClient.getCategory()

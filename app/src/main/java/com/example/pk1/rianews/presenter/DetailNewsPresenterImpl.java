@@ -24,7 +24,7 @@ public class DetailNewsPresenterImpl implements DetailNewsPresenter {
     }
 
     @Override
-    public void requestJsonNewsText(final News news) {
+    public void requestNewsText(final News news) {
         if (isAttached()) {
             try {
                 jsoupClient.getTextNews(news)

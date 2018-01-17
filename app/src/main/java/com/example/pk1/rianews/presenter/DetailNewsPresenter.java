@@ -7,7 +7,7 @@ import com.example.pk1.rianews.view.NewsView;
 import java.util.List;
 
 public interface DetailNewsPresenter {
-    void requestJsonNewsText(News news);
+    void requestNewsText(News news);
     void saveNewsInDB(News news);
     void attach(DetailNewsView view);
     void detach();
